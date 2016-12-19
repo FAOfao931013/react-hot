@@ -1,4 +1,4 @@
-# React Hot
+# React Hot[![Build Status](https://travis-ci.org/FAOfao931013/react-hot.svg?branch=master)](https://travis-ci.org/FAOfao931013/react-hot)
 
 ### 已启用yarn
 
