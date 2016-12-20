@@ -1880,7 +1880,7 @@ less-loader@^2.2.3:
   dependencies:
     loader-utils "^0.2.5"
 
-less@^2.6.1:
+less@^2.7.1:
   version "2.7.1"
   resolved "http://registry.npm.taobao.org/less/download/less-2.7.1.tgz#6cbfea22b3b830304e9a5fb371d54fa480c9d7cf"
   optionalDependencies:
@@ -3374,7 +3374,7 @@ webpack-dev-server@^1.14.1:
     supports-color "^3.1.1"
     webpack-dev-middleware "^1.4.0"
 
-webpack-hot-middleware@^2.12.1:
+webpack-hot-middleware@^2.13.2:
   version "2.13.2"
   resolved "http://registry.npm.taobao.org/webpack-hot-middleware/download/webpack-hot-middleware-2.13.2.tgz#6500b15e6d4f1a9590f8df708183f4d2ac2c3e9e"
   dependencies:
@@ -3383,7 +3383,7 @@ webpack-hot-middleware@^2.12.1:
     querystring "^0.2.0"
     strip-ansi "^3.0.0"
 
-webpack@^1.13.1:
+webpack@^1.14.0:
   version "1.14.0"
   resolved "http://registry.npm.taobao.org/webpack/download/webpack-1.14.0.tgz#54f1ffb92051a328a5b2057d6ae33c289462c823"
   dependencies:
