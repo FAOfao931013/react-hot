@@ -18,8 +18,9 @@ app.use(webpackDevMiddleware(compiler, {
 
 app.use(webpackHotMiddleware(compiler));
 
-app.get('*', function (request, response) {
-  response.sendFile(path.resolve(__dirname, 'index.html'));
+app.get('*', function (req, res) {
+  // response.sendFile(path.resolve(__dirname, 'index.html'));
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(8090, 'localhost', function (err) {
