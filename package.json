@@ -44,8 +44,8 @@
   },
   "scripts": {
     "dev": "node server.js",
-    "start": "webpack-dev-server --config ./webpack/dev.js --progress --colors --port 8090 --history-api-fallback",
-    "build": "webpack --config ./webpack/prod.js --progress --colors --history-api-fallback"
+    "start": "webpack-dev-server --config ./webpack/dev.js --progress --colors --port 8090",
+    "build": "webpack --config ./webpack/prod.js --progress --colors"
   },
   "author": "fao",
   "license": "ISC"
