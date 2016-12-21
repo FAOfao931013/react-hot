@@ -15,7 +15,6 @@ var config = {
         path: path.join(__dirname, '../dist'),
         filename: '[name].js',
         sourceMapFilename: '[file].map',
-        clearBeforeBuild: true,
         publicPath: '/static/'
     },
 
