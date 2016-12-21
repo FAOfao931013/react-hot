@@ -7,9 +7,11 @@ import {
 } from 'react-router';
 import routes from '../src/routes';
 
+const history = process.env.NODE_ENV !== 'production' ? browserHistory : hashHistory;
+
 ReactDOM.render(
     <Router
-        history={hashHistory}
+        history={history}
         routes={routes} />,
     document.getElementById('root')
 );
