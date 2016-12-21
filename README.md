@@ -20,4 +20,4 @@ $ npm run dev
 路由使用react-router
 
 ### 在线预览
-[https://faofao931013.github.io/react-hot/#/index](https://faofao931013.github.io/react-hot/#/index)
+[https://faofao931013.github.io/react-hot](https://faofao931013.github.io/react-hot)
