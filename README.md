@@ -22,7 +22,7 @@ $ npm run dev
 ### 在线预览
 [https://faofao931013.github.io/react-hot](https://faofao931013.github.io/react-hot)
 
-### 参考：
+### 参考
 1、[webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware)
 
 2、[webpack-dev-middleware](http://webpack.github.io/docs/webpack-dev-middleware.html)
