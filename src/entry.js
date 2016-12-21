@@ -9,7 +9,7 @@ import routes from '../src/routes';
 
 ReactDOM.render(
     <Router
-        history={browserHistory}
+        history={hashHistory}
         routes={routes} />,
     document.getElementById('root')
 );
