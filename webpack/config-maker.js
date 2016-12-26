@@ -40,23 +40,12 @@ var config = {
             //css
             {
                 test: /\.css$/,
-                loaders: [
-                    {
-                        test: /\.css$/,
-                        exclude: /\.useable\.css$/,
-                        loader: "style-loader!css-loader",
-                    },
-                    {
-                        test: /\.useable\.css$/,
-                        loader: "style-loader/useable!css-loader"
-                    }
-                ]
+                loader: 'style-loader!css-loader'
             },
             {
                 test: /\.(jpg|jpeg|png|gif|svg|woff|woff2|ttf|eot)$/,
                 loader: 'file-loader'
-            }
-
+            },
         ]
     },
 
