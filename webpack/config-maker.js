@@ -1,22 +1,33 @@
-var WebpackConfig = require('webpack-config');
-var path = require('path');
-var autoprefixer = require('autoprefixer');
+const WebpackConfig = require('webpack-config');
+const path = require('path');
+const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
-var paths = {
+const paths = {
     src: path.join(__dirname, '../src'),
     components: path.join(__dirname, '../src/components'),
 };
 
-var config = {
+const config = {
 
-    devtool: '#source-map',
+    devtool: 'inline-source-map',
+
+    entry: {
+        vendor: ['react', 'react-dom', 'react-router'],
+    },
 
     output: {
         path: path.join(__dirname, '../dist'),
         filename: '[name].js',
         sourceMapFilename: '[file].map',
-        publicPath: '/static/'
+        publicPath: '/static/',
+        chunkFilename: '[name].[chunkhash:5].chunk.js',
     },
+
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
+    ],
 
     module: {
         loaders: [
