@@ -15,7 +15,8 @@ var config = {
         path: path.join(__dirname, '../dist'),
         filename: '[name].js',
         sourceMapFilename: '[file].map',
-        publicPath: '/static/'
+        publicPath: '/static/',
+        chunkFilename: '[name].[chunkhash:5].chunk.js',
     },
 
     module: {
