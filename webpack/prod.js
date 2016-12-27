@@ -1,6 +1,6 @@
 const webpack = require('webpack');
-var WebpackConfig = require('webpack-config');
-var path = require('path');
+const WebpackConfig = require('webpack-config');
+const path = require('path');
 
 module.exports = new WebpackConfig.Config().extend('./webpack/config-maker.js').merge({
     plugins: [
@@ -12,11 +12,13 @@ module.exports = new WebpackConfig.Config().extend('./webpack/config-maker.js').
         new webpack.optimize.UglifyJsPlugin({
             minimize: true
         }),
-        new webpack.HotModuleReplacementPlugin(),
     ],
     entry: {
         entry: [
             path.join(__dirname, '../src/entry.js')
         ]
+    },
+    output: {
+        publicPath: 'https://faofao931013.github.io/react-hot/dist/',
     },
 });
