@@ -4,7 +4,6 @@ import {
 	IndexRedirect,
 } from 'react-router';
 import rootNode from './rootNode';
-// import Index from 'components/Index';
 
 const index  = (location, cb) => {
   require.ensure([], require => {
