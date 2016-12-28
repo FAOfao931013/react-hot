@@ -12,12 +12,10 @@ const index  = (location, cb) => {
 };
 
 const routes = (
-	<div>
-		<Route path='/' component={rootNode}>
-			<IndexRedirect to='index' />
-			<Route path='index' getComponent={index} />
-		</Route>
-	</div>
+	<Route path='/' component={rootNode}>
+		<IndexRedirect to='index' />
+		<Route path='index' getComponent={index} />
+	</Route>
 );
 
 export default routes;
