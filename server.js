@@ -22,11 +22,11 @@ app.get('*', function (req, res) {
   res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
-app.listen(8090, 'localhost', function (err) {
+app.listen(8092, 'localhost', function (err) {
     if (err) {
         console.log(err);
     } else {
-        console.log('Listening at http://localhost:8090');
+        console.log('Listening at http://localhost:8092');
     }
 });
 
