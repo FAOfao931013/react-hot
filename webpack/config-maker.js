@@ -2,6 +2,7 @@ const WebpackConfig = require('webpack-config');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
+const px2rem = require('postcss-px2rem');
 
 const paths = {
     src: path.join(__dirname, '../src'),
@@ -43,16 +44,17 @@ const config = {
                 loader: 'babel',
                 exclude: /(node_modules)/
             },
-            // less
+            //less
             {
                 test: /\.less$/,
-                loader: "style-loader!css-loader!less-loader!postcss-loader"
+                loader: 'style-loader!css-loader!postcss-loader!less-loader'
             },
             //css
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader'
+                loader: 'style-loader!css-loader!postcss-loader'
             },
+            //file
             {
                 test: /\.(jpg|jpeg|png|gif|svg|woff|woff2|ttf|eot)$/,
                 loader: 'file-loader'
@@ -60,7 +62,12 @@ const config = {
         ]
     },
 
-    postcss: [ autoprefixer({ browsers: ['last 7 versions'] }) ],
+    postcss() {
+        return [
+            autoprefixer({ browsers: ['last 7 versions'] }),
+            px2rem({ remUnit: 75 }),
+        ];
+    },
 
     resolve: {
         extensions: ['', '.js', '.jsx'],
