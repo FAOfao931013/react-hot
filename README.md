@@ -21,6 +21,8 @@ $ npm run dev
 ### 更新
 2016.12.27 使用按需加载
 
+2016.12.29 使用rem适配
+
 ### 在线预览
 [https://faofao931013.github.io/react-hot](https://faofao931013.github.io/react-hot)
 
