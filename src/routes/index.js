@@ -4,7 +4,6 @@ import {
 	IndexRedirect,
 } from 'react-router';
 import rootNode from './rootNode';
-// import Index from 'components/Index';
 
 const index  = (location, cb) => {
   require.ensure([], require => {
@@ -13,12 +12,10 @@ const index  = (location, cb) => {
 };
 
 const routes = (
-	<div>
-		<Route path='/' component={rootNode}>
-			<IndexRedirect to='index' />
-			<Route path='index' getComponent={index} />
-		</Route>
-	</div>
+	<Route path='/' component={rootNode}>
+		<IndexRedirect to='index' />
+		<Route path='index' getComponent={index} />
+	</Route>
 );
 
 export default routes;
