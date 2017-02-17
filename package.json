@@ -45,7 +45,7 @@
   },
   "scripts": {
     "dev": "node server.js",
-    "start": "webpack-dev-server --config ./webpack/dev.config.js --progress --colors --port 8090",
+    "start": "webpack-dev-server --config ./webpack/dev.config.js --progress --colors --port 8092",
     "build": "webpack --config ./webpack/prod.config.js --progress --colors"
   },
   "author": "fao",
