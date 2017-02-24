@@ -23,6 +23,7 @@
     "webpack-hot-middleware": "^2.13.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.23.0",
     "babel-core": "^6.7.6",
     "babel-eslint": "^6.0.2",
     "babel-loader": "^6.2.4",
@@ -44,7 +45,7 @@
     "webpack-hot-middleware": "^2.13.2"
   },
   "scripts": {
-    "dev": "node server.js",
+    "dev": "babel-node server.js",
     "start": "webpack-dev-server --config ./webpack/dev.config.js --progress --colors --port 8092",
     "build": "webpack --config ./webpack/prod.config.js --progress --colors"
   },

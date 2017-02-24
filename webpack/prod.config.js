@@ -1,8 +1,8 @@
-const webpack = require('webpack');
-const WebpackConfig = require('webpack-config');
-const path = require('path');
+import webpack from 'webpack';
+import Config from 'webpack-config';
+import path from 'path';
 
-module.exports = new WebpackConfig.Config().extend('./webpack/base.config.js').merge({
+const prodConfig = new Config().extend('./webpack/base.config.js').merge({
     plugins: [
         new webpack.DefinePlugin({
           'process.env': {
@@ -22,3 +22,5 @@ module.exports = new WebpackConfig.Config().extend('./webpack/base.config.js').m
         publicPath: 'https://faofao931013.github.io/react-hot/dist/',
     },
 });
+
+export default prodConfig;
