@@ -23,6 +23,8 @@ $ npm run dev
 
 2016.12.29 使用rem适配
 
+2017.2.24 使用babel-node
+
 ### 在线预览
 [https://faofao931013.github.io/react-hot](https://faofao931013.github.io/react-hot)
 

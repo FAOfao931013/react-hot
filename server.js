@@ -1,13 +1,12 @@
-var path = require('path');
-var express = require('express');
-var webpack = require('webpack');
-var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware');
+import path from 'path';
+import express from 'express';
+import webpack from 'webpack';
+import webpackDevMiddleware from 'webpack-dev-middleware';
+import webpackHotMiddleware from 'webpack-hot-middleware';
+import config from './webpack/dev.config.js';
 
-var config = require('./webpack/dev.config.js');
-
-var app = express();
-var compiler = webpack(config);
+const app = express();
+const compiler = webpack(config);
 
 app.use(express.static(path.join(__dirname, '/')));
 
@@ -18,11 +17,11 @@ app.use(webpackDevMiddleware(compiler, {
 
 app.use(webpackHotMiddleware(compiler));
 
-app.get('*', function (req, res) {
+app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
-app.listen(8092, 'localhost', function (err) {
+app.listen(8092, 'localhost', err => {
     if (err) {
         console.log(err);
     } else {

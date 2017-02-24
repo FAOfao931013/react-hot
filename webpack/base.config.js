@@ -1,8 +1,8 @@
-const WebpackConfig = require('webpack-config');
-const path = require('path');
-const autoprefixer = require('autoprefixer');
-const webpack = require('webpack');
-const px2rem = require('postcss-px2rem');
+import Config from 'webpack-config';
+import path from 'path';
+import autoprefixer from 'autoprefixer';
+import webpack from 'webpack';
+import px2rem from 'postcss-px2rem';
 
 const paths = {
     src: path.join(__dirname, '../src'),
@@ -78,4 +78,6 @@ const config = {
     },
 };
 
-module.exports = new WebpackConfig.Config().merge(config);
+const baseConfig = new Config().merge(config);
+
+export default baseConfig;

@@ -1,9 +1,10 @@
-const webpack = require('webpack');
-const WebpackConfig = require('webpack-config');
-const path = require('path');
+import webpack from 'webpack';
+import Config from 'webpack-config';
+import path from 'path';
+
 const hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
 
-module.exports = new WebpackConfig.Config().extend('./webpack/base.config.js').merge({
+const devConfig = new Config().extend('./webpack/base.config.js').merge({
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.NoErrorsPlugin()
@@ -18,3 +19,5 @@ module.exports = new WebpackConfig.Config().extend('./webpack/base.config.js').m
         publicPath: '/static/',
     },
 });
+
+export default devConfig;
