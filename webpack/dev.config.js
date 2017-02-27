@@ -7,7 +7,8 @@ const hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
 const devConfig = new Config().extend('./webpack/base.config.js').merge({
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        // new webpack.HotModuleReplacementPlugin()
     ],
     entry: {
         entry: [
