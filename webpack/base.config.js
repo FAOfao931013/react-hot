@@ -26,12 +26,16 @@ const config = {
     },
 
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
     ],
 
     module: {
         loaders: [
+            {
+                test: /\.jsx?$/,
+                loaders: ['react-hot'],
+                include: path.join(__dirname, '../src')
+            },
             // jsx
             {
                 test: /\.jsx$/,

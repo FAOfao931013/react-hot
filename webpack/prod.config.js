@@ -20,6 +20,7 @@ const prodConfig = new Config().extend('./webpack/base.config.js').merge({
     },
     output: {
         publicPath: 'https://faofao931013.github.io/react-hot/dist/',
+        // publicPath: 'dist/',
     },
 });
 
