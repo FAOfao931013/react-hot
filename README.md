@@ -16,7 +16,7 @@ $ npm run dev
 [http://localhost:8092](http://localhost:8092)
 
 ### 项目说明
-整合了react和热加载的一个示例项目，样式部分采用less，路由使用react-router，可自行拓展使用。
+整合了react和热加载的一个示例项目，采用预处理样式less，路由使用react-router，可自行拓展使用。
 
 ### 更新
 2016.12.27 使用按需加载
