@@ -27,6 +27,8 @@ $ npm run dev
 
 2017.02.27 更新热更新和build
 
+2017.09.28 更新react版本（15.6.2）
+
 ### 在线预览
 [https://faofao931013.github.io/react-hot](https://faofao931013.github.io/react-hot)
 
