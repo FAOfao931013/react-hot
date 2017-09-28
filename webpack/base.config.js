@@ -7,6 +7,7 @@ import px2rem from 'postcss-px2rem';
 const paths = {
     src: path.join(__dirname, '../src'),
     components: path.join(__dirname, '../src/components'),
+    decorator: path.join(__dirname, '../src/decorator'),
 };
 
 const config = {
@@ -78,6 +79,7 @@ const config = {
         alias: {
             'src': paths.src,
             'components': paths.components,
+            'decorator': paths.decorator,
         }
     },
 };
