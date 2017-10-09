@@ -1,8 +1,8 @@
 import React from 'react';
-import test from 'decorator/test';
+import index from 'decorator/index';
 import './style.less';
 
-@test('my first decorator')
+@index('my first decorator')
 class Index extends React.Component {
     constructor(props) {
         super(props);
