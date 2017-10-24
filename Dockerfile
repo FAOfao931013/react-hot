@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN npm install -g forever
 
-RUN npm install -g babel
+RUN npm install -g babel-cli
 
 COPY ./package.json /app/
 
