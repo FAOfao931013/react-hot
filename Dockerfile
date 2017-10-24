@@ -14,4 +14,4 @@ COPY . /app/
 
 EXPOSE 8092
 
-RUN npm run dev
+CMD forever babel-node server.js
