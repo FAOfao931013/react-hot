@@ -16,4 +16,4 @@ COPY . /app/
 
 EXPOSE 8092
 
-CMD babel-node server.js
+CMD forever server.js
