@@ -48,8 +48,7 @@
   "scripts": {
     "dev": "babel-node server.js",
     "start": "webpack-dev-server --config ./webpack/dev.config.js --progress --colors --port 8092",
-    "build": "babel-node bundle.js",
-    "test": "node test.js"
+    "build": "babel-node bundle.js"
   },
   "author": "fao",
   "license": "ISC"
