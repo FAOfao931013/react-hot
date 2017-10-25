@@ -1,12 +1,12 @@
 FROM node:0.12.7-wheezy
 
-MAINTAINER YeTing "me@yeting.info"
+MAINTAINER FAO "465476662@qq.com"
 
 WORKDIR /app
 
 RUN npm install -g forever
 
-RUN npm install -g babel-cli
+RUN npm install --save-dev babel-cli
 
 COPY ./package.json /app/
 
